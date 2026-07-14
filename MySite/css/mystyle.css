@@ -229,3 +229,31 @@ strong {
         text-shadow: none;
     }
 }
+
+.stats-table {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.stats-table caption {
+    font-size: 110%;
+    font-weight: bold;
+    color: #0b1b3d;
+    padding-bottom: 10px;
+    caption-side: top; 
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.stats-table th {
+    background-color: #0b1b3d;
+    color: #ffffff;
+}
