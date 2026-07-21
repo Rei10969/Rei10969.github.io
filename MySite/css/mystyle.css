@@ -216,7 +216,6 @@ strong {
         display: none;
     }
 
-    /* 濃紺のボックスを印刷用に白黒反転させてインクを節約する */
     .navy {
         background-color: transparent;
         color: #000000;
@@ -262,7 +261,7 @@ strong {
     float: left;
     width: 75%;
     margin: 30px 0;
-    box-sizing:
+    box-sizing: border-box;
 }
 
 .side-menu {
@@ -311,9 +310,22 @@ strong {
 }
 
 @media (max-width: 768px) {
-    .global-nav { ... }
-    .global-nav li { ... }
-    .main-img { ... }
+    .global-nav {
+        width: auto;
+        height: auto;
+        padding: 0 15px;
+    }
+
+    .global-nav li {
+        clear: both;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .main-img {
+        max-width: 100%;
+        height: auto;
+    }
 
     .sub-article {
         float: none;
